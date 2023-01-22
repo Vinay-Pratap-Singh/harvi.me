@@ -4,7 +4,7 @@ import Layout from "../Layout/Layout";
 const HomePage = () => {
   return (
     <Layout>
-      <div id="homepage" className=" text-white h-[85vh] ml-[15%]">
+      <div className=" text-white h-[85vh] ml-[15%]">
         {/* wrapper for content */}
         <div className="h-full flex flex-col justify-center">
           {/* introduction */}
