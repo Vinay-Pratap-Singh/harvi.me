@@ -1,7 +1,6 @@
 import React from "react";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Education from "./Pages/Education";
 import HomePage from "./Pages/HomePage";
 import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/education" element={<Education />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

@@ -51,23 +51,12 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/education"
-            style={({ isActive }) => ({
-              color: isActive ? "#64ffda" : "white",
-            })}
-          >
-            <span className="text-[#64ffda] mr-1 text-sm">03.</span> Education
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
             to="/skills"
             style={({ isActive }) => ({
               color: isActive ? "#64ffda" : "white",
             })}
           >
-            <span className="text-[#64ffda] mr-1 text-sm">04.</span> Skills
+            <span className="text-[#64ffda] mr-1 text-sm">03.</span> Skills
           </NavLink>
         </li>
 
@@ -78,7 +67,7 @@ const Navbar = () => {
               color: isActive ? "#64ffda" : "white",
             })}
           >
-            <span className="text-[#64ffda] mr-1 text-sm">05.</span> Projects
+            <span className="text-[#64ffda] mr-1 text-sm">04.</span> Projects
           </NavLink>
         </li>
 
@@ -89,7 +78,7 @@ const Navbar = () => {
               color: isActive ? "#64ffda" : "white",
             })}
           >
-            <span className="text-[#64ffda] mr-1 text-sm">06.</span> Contact
+            <span className="text-[#64ffda] mr-1 text-sm">05.</span> Contact
           </NavLink>
         </li>
       </ul>

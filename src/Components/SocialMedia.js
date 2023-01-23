@@ -1,15 +1,22 @@
 import React from "react";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 
 const SocialMedia = () => {
   return (
-    <ul className="text-gray-100 fixed left-[6%] top-[35%] text-2xl space-y-4">
+    <ul className="text-gray-100 fixed z-10 left-[6%] top-[35%] space-y-4 text-3xl">
       <li className="hover:text-[#64ffda]">
         <a
           href="https://github.com/Vinay-Pratap-Singh"
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Github"
         >
-          <i class="fa-brands fa-github"></i>
+          <AiFillGithub />
         </a>
       </li>
 
@@ -19,7 +26,7 @@ const SocialMedia = () => {
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Linkedin"
         >
-          <i class="fa-brands fa-linkedin-in"></i>
+          <AiFillLinkedin />
         </a>
       </li>
 
@@ -29,7 +36,7 @@ const SocialMedia = () => {
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Leetcode"
         >
-          <i class="fa-solid fa-code"></i>
+          <SiLeetcode />
         </a>
       </li>
 
@@ -39,7 +46,7 @@ const SocialMedia = () => {
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Instagram"
         >
-          <i class="fa-brands fa-instagram"></i>
+          <AiFillInstagram />
         </a>
       </li>
 
@@ -49,7 +56,7 @@ const SocialMedia = () => {
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Twitter"
         >
-          <i class="fa-brands fa-twitter"></i>
+          <AiOutlineTwitter />
         </a>
       </li>
     </ul>
