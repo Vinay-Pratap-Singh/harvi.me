@@ -14,7 +14,7 @@ const SkillCard = () => {
     <>
       {/* for html */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <FaHtml5 size={48} />
@@ -23,7 +23,7 @@ const SkillCard = () => {
 
       {/* for css */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <FaCss3Alt size={48} />
@@ -32,7 +32,7 @@ const SkillCard = () => {
 
       {/* for tailwind css */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <SiTailwindcss size={48} />
@@ -41,7 +41,7 @@ const SkillCard = () => {
 
       {/* for chakra ui */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <SiChakraui size={48} />
@@ -50,7 +50,7 @@ const SkillCard = () => {
 
       {/* for javascript */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <TbBrandJavascript size={48} />
@@ -59,7 +59,7 @@ const SkillCard = () => {
 
       {/* for react */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <FaReact size={48} />
@@ -68,7 +68,7 @@ const SkillCard = () => {
 
       {/* for node */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <FaNode size={48} />
@@ -77,7 +77,7 @@ const SkillCard = () => {
 
       {/* for express */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <SiExpress size={48} />
@@ -86,7 +86,7 @@ const SkillCard = () => {
 
       {/* for mongodb */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <SiMongodb size={48} />
@@ -95,7 +95,7 @@ const SkillCard = () => {
 
       {/* for git */}
       <div
-        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold"
+        className="text-white flex flex-col items-center justify-center w-28 h-32 rounded-md font-semibold cursor-pointer transition-all ease-in-out duration-500 hover:-translate-y-4"
         style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
       >
         <SiGit size={48} />
