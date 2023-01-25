@@ -44,7 +44,7 @@ const About = () => {
         <div className="w-1/3 h-[22rem] border-2 border-[#64ffda] cursor-pointer">
           <img
             className="object-cover w-full h-full p-2 hover:transition-all hover:p-0"
-            src="img2.jpeg"
+            src="userImage.jpeg"
             alt="image"
           />
         </div>
