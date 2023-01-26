@@ -4,7 +4,7 @@ import SocialMedia from '../Components/SocialMedia'
 
 const Layout = ({children}) => {
     return (
-        <div className='h-[100vh] w-[100vw] relative'>
+        <div className='relative'>
             <Navbar />
             <SocialMedia />
             {children}

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Layout from "../Layout/Layout";
+import userImage from "../Assets/userImage.jpeg"
 
 const About = () => {
   return (
@@ -41,10 +42,10 @@ const About = () => {
         </div>
 
         {/* for image */}
-        <div className="w-1/3 h-[22rem] border-2 border-[#64ffda] cursor-pointer">
+        <div className="w-1/3 h-[22rem] border-2 border-[#64ffda] cursor-pointer rounded-md">
           <img
-            className="object-cover w-full h-full p-2 hover:transition-all hover:p-0"
-            src="userImage.jpeg"
+            className="object-cover w-full h-full p-2 hover:transition-all hover:p-0 rounded-md"
+            src={userImage}
             alt="image"
           />
         </div>

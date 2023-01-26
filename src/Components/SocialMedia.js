@@ -13,6 +13,7 @@ const SocialMedia = () => {
       <li className="hover:text-[#64ffda]">
         <a
           href="https://github.com/Vinay-Pratap-Singh"
+          target={"_blank"}
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Github"
         >
@@ -23,6 +24,7 @@ const SocialMedia = () => {
       <li className="hover:text-[#64ffda]">
         <a
           href="https://www.linkedin.com/in/vinay-pratap-singh-4b265a212/"
+          target={"_blank"}
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Linkedin"
         >
@@ -33,6 +35,7 @@ const SocialMedia = () => {
       <li className="hover:text-[#64ffda]">
         <a
           href="https://leetcode.com/itsharvihere/"
+          target={"_blank"}
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Leetcode"
         >
@@ -43,6 +46,7 @@ const SocialMedia = () => {
       <li className="hover:text-[#64ffda]">
         <a
           href="https://www.instagram.com/itsmevinayhere/"
+          target={"_blank"}
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Instagram"
         >
@@ -53,6 +57,7 @@ const SocialMedia = () => {
       <li className="hover:text-[#64ffda]">
         <a
           href="https://twitter.com/harvi2001"
+          target={"_blank"}
           className="tooltip tooltip-right tooltip-accent"
           data-tip="Twitter"
         >

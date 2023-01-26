@@ -14,18 +14,18 @@ const Bubble = (props) => {
   useEffect(() => {
     const test = document.getElementById(props.name);
     // for preventing the stacking of skills
-    const X = Math.floor(Math.random() * 70);
-    const Y = Math.floor(Math.random() * 60);
-    test.style.top = `${Y}vh`;
-    test.style.left = `${X}vw`;
+    const X = Math.floor(Math.random() * 90);
+    const Y = Math.floor(Math.random() * 85);
+    test.style.top = `${Y}%`;
+    test.style.left = `${X}%`;
 
     // for animating the skills
     let id;
     id = setInterval(() => {
-      const X = Math.floor(Math.random() * 70);
-      const Y = Math.floor(Math.random() * 60);
-      test.style.top = `${Y}vh`;
-      test.style.left = `${X}vw`;
+      const X = Math.floor(Math.random() * 90);
+      const Y = Math.floor(Math.random() * 85);
+      test.style.top = `${Y}%`;
+      test.style.left = `${X}%`;
     }, Number(props.time));
     return () => {
       clearInterval(id);

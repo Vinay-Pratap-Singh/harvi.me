@@ -36,7 +36,7 @@ const Skills = () => {
 
       {/* for displaying the bubbles and cards */}
       {view ? (
-        <div className="h-[75vh] ml-[15%] pt-10 relative">
+        <div className="h-[85vh] ml-[15%] pt-10 relative">
           <Bubble name="FaHtml5" time="3100" />
           <Bubble name="FaCss3Alt" time="3300" />
           <Bubble name="SiTailwindcss" time="3500" />
@@ -49,7 +49,7 @@ const Skills = () => {
           <Bubble name="SiGit" time="4900" />
         </div>
       ) : (
-        <div className="h-[75vh] flex items-center justify-center">
+        <div className="h-[85vh] flex items-center justify-center">
           <div className="grid grid-cols-5 gap-10 w-fit">{<SkillCard />}</div>
         </div>
       )}
