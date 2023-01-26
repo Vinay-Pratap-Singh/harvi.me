@@ -449,7 +449,16 @@ const Projects = () => {
               </div>
             </div>
 
-            <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold w-fit mx-auto text-white transition-all ease-in-out duration-300 hover:-translate-y-2"><a className="bg-transparent" href="https://github.com/Vinay-Pratap-Singh" target={"_blank"}>Show More</a></button>
+            {/* show more button */}
+            <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold w-fit mx-auto text-white transition-all ease-in-out duration-300 hover:-translate-y-2">
+              <a
+                className="bg-transparent"
+                href="https://github.com/Vinay-Pratap-Singh"
+                target={"_blank"}
+              >
+                Show More
+              </a>
+            </button>
           </div>
         </div>
       </div>

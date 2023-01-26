@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Layout from "../Layout/Layout";
-import userImage from "../Assets/userImage.jpeg"
+import userImage from "../Assets/userImage.jpeg";
 
 const About = () => {
   return (
