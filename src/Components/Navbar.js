@@ -12,7 +12,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="sticky top-0 z-50 flex flex-row-reverse sm:flex-row items-center justify-between px-[5%] text-white font-mono sm:h-[15vh]">
+    <nav className="sticky top-0 z-50 flex flex-row-reverse sm:flex-row items-center justify-between px-[5%] text-white font-mono h-[10vh] sm:h-[15vh]">
       {/* creating the name logo */}
       <NavLink to="/">
         <div
@@ -35,10 +35,10 @@ const Navbar = () => {
       </NavLink>
 
       {/* adding the menu button */}
-      <FiMenu onClick={toggle} className="sm:hidden relative" />
+      <FiMenu onClick={toggle} size={32} className="sm:hidden relative" />
 
       {/* creating the navigation menu */}
-      <ul className="hidden sm:flex space-x-8">
+      <ul className="hidden absolute sm:static z-50 left-0 w-full sm:w-auto top-20 pl-6 sm:pl-0 transition-all ease-in-out duration-500 sm:flex sm:space-x-8">
         <li>
           <NavLink
             to="/"
