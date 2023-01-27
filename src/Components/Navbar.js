@@ -1,9 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
+  const toggle = (event) => {
+    const element = event.target.nextElementSibling;
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  };
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-[5%] text-white font-mono h-[15vh]">
+    <nav className="sticky top-0 z-50 flex flex-row-reverse sm:flex-row items-center justify-between px-[5%] text-white font-mono sm:h-[15vh]">
       {/* creating the name logo */}
       <NavLink to="/">
         <div
@@ -25,8 +34,11 @@ const Navbar = () => {
         </div>
       </NavLink>
 
+      {/* adding the menu button */}
+      <FiMenu onClick={toggle} className="sm:hidden relative" />
+
       {/* creating the navigation menu */}
-      <ul className="flex space-x-8">
+      <ul className="hidden sm:flex space-x-8">
         <li>
           <NavLink
             to="/"
