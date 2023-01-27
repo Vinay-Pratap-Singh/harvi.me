@@ -6,7 +6,7 @@ import userImage from "../Assets/userImage.jpeg";
 const About = () => {
   return (
     <Layout>
-      <div className="sm:mx-[15%] sm:h-[85vh] flex flex-col-reverse items-center justify-center sm:space-x-10 text-gray-100">
+      <div className="sm:mx-[15%] sm:h-[85vh] flex flex-col-reverse sm:flex-row items-center justify-center sm:space-x-10 text-gray-100">
         {/* for introduction */}
         <div className="sm:w-2/3 mx-6 sm:mx-0">
           Hello! I am Vinay Pratap Singh, a passionate software engineer.
@@ -27,7 +27,7 @@ const About = () => {
             😊
           </span>
           .{/* adding the buttons */}
-          <div className="mt-6 space-x-6 mb-[5rem]">
+          <div className="mt-6 space-x-6 mb-[5rem] sm:mb-0">
             <NavLink to="/contact">
               <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold">
                 Hire Me
