@@ -9,7 +9,7 @@ const Contact = () => {
         <form
           name="contact"
           method="post"
-          className="w-80 h-[90%] p-4 rounded-md space-y-4 text-white flex flex-col justify-center"
+          className="w-80 h-[28rem] p-4 rounded-md space-y-4 text-white flex flex-col justify-center"
           style={{ boxShadow: "1px 1px 4px 4px #1aba95" }}
         >
           {/* for netlify bot */}
@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
 
           {/* button for submitting the form */}
-          <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold">Submit</button>
+          <button type="submit" className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold">Submit</button>
         </form>
       </div>
     </Layout>
