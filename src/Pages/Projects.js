@@ -35,7 +35,7 @@ const Projects = () => {
 
   return (
     <Layout>
-      <div className="ml-[15%] mr-10">
+      <div className="sm:ml-[15%] sm:mr-10 mx-6">
         <h1 className="text-center my-2 text-3xl text-white font-semibold">
           Projects Statistics
         </h1>
@@ -69,10 +69,10 @@ const Projects = () => {
           </h1>
           <div className="flex flex-col gap-20">
             {/* for project 1 */}
-            <div className="flex items-center gap-10 text-white">
+            <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
               <img
                 src={contactManager}
-                className="w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
 
@@ -89,7 +89,7 @@ const Projects = () => {
 
                 <div>
                   <h4 className="font-medium">Technology Used</h4>
-                  <ul className="flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200">
+                  <ul className="sm:flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Chakra UI</li>
@@ -160,10 +160,10 @@ const Projects = () => {
             </div>
 
             {/* for project 2 */}
-            <div className="flex flex-row-reverse items-center gap-10 text-white">
+            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
               <img
                 src={snakeGame}
-                className="w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
 
@@ -234,10 +234,10 @@ const Projects = () => {
             </div>
 
             {/* for project 3 */}
-            <div className="flex items-center gap-10 text-white">
+            <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
               <img
                 src={bubbleGame}
-                className="w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
 
@@ -312,10 +312,10 @@ const Projects = () => {
             </div>
 
             {/* for project 4 */}
-            <div className="flex flex-row-reverse items-center gap-10 text-white">
+            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
               <img
                 src={whatsappClone}
-                className="w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
 
@@ -376,10 +376,10 @@ const Projects = () => {
             </div>
 
             {/* for project 5 */}
-            <div className="flex items-center gap-10 text-white">
+            <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
               <img
                 src={notesApp}
-                className="w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
 
@@ -450,7 +450,7 @@ const Projects = () => {
             </div>
 
             {/* show more button */}
-            <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold w-fit mx-auto text-white transition-all ease-in-out duration-300 hover:-translate-y-2">
+            <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 mb-16 py-2 rounded-md font-semibold w-fit mx-auto text-white transition-all ease-in-out duration-300 hover:-translate-y-2">
               <a
                 className="bg-transparent"
                 href="https://github.com/Vinay-Pratap-Singh"
