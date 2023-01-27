@@ -6,9 +6,9 @@ import userImage from "../Assets/userImage.jpeg";
 const About = () => {
   return (
     <Layout>
-      <div className="mx-[15%] h-[85vh] flex items-center justify-center space-x-10 text-gray-100">
+      <div className="sm:mx-[15%] sm:h-[85vh] flex flex-col-reverse items-center justify-center sm:space-x-10 text-gray-100">
         {/* for introduction */}
-        <div className="w-2/3">
+        <div className="sm:w-2/3 mx-6 sm:mx-0">
           Hello! I am Vinay Pratap Singh, a passionate software engineer.
           Currently working and exploring more on{" "}
           <span className="text-[#64ffda]">Full Stack Web Development</span> in
@@ -27,7 +27,7 @@ const About = () => {
             😊
           </span>
           .{/* adding the buttons */}
-          <div className="mt-6 space-x-6">
+          <div className="mt-6 space-x-6 mb-[5rem]">
             <NavLink to="/contact">
               <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold">
                 Hire Me
@@ -42,7 +42,7 @@ const About = () => {
         </div>
 
         {/* for image */}
-        <div className="w-1/3 h-[22rem] border-2 border-[#64ffda] cursor-pointer rounded-md">
+        <div className="sm:w-1/3 my-4 sm:my-0 h-[22rem] border-2 border-[#64ffda] cursor-pointer rounded-md">
           <img
             className="object-cover w-full h-full p-2 hover:transition-all hover:p-0 rounded-md"
             src={userImage}

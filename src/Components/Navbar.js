@@ -38,7 +38,7 @@ const Navbar = () => {
       <FiMenu onClick={toggle} size={32} className="sm:hidden relative" />
 
       {/* creating the navigation menu */}
-      <ul className="hidden absolute sm:static z-50 left-0 w-full sm:w-auto top-20 pl-6 sm:pl-0 transition-all ease-in-out duration-500 sm:flex sm:space-x-8">
+      <ul className="hidden absolute sm:static z-50 left-0 w-full sm:w-auto top-[4.5rem] pb-2 sm:pb-0 pl-6 sm:pl-0 transition-all ease-in-out duration-500 sm:flex sm:space-x-8">
         <li>
           <NavLink
             to="/"

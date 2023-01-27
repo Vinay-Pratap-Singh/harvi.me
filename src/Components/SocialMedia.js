@@ -9,7 +9,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const SocialMedia = () => {
   return (
-    <ul className="text-gray-100 fixed z-10 flex items-center justify-center w-full py-4 space-x-4 bottom-10 sm:left-[6%] sm:block sm:space-x-0 sm:w-fit maxWidth:left-[17%] sm:top-[35%] sm:space-y-4 text-3xl">
+    <ul className="text-gray-100 fixed z-10 flex items-center justify-center w-full py-4 space-x-4 bottom-0 sm:left-[6%] sm:block sm:space-x-0 sm:w-fit maxWidth:left-[17%] sm:top-[35%] sm:space-y-4 text-3xl">
       <li className="hover:text-[#64ffda]">
         <a
           href="https://github.com/Vinay-Pratap-Singh"
