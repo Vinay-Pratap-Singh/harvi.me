@@ -22,7 +22,7 @@ const Bubble = (props) => {
     // for animating the skills
     let id;
     id = setInterval(() => {
-      const X = Math.floor(Math.random() * 90);
+      const X = Math.floor(Math.random() * 85);
       const Y = Math.floor(Math.random() * 85);
       test.style.top = `${Y}%`;
       test.style.left = `${X}%`;

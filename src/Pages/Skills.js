@@ -9,34 +9,19 @@ const Skills = () => {
 
   return (
     <Layout>
-      {/* button for toggling the normal and animation view of page */}
-      {view && (
-        <button
-          className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute right-10 top-28 z-50 tooltip tooltip-top"
-          data-tip="Switch View"
-          onClick={() => {
-            setView(!view);
-          }}
-        >
-          <AiFillEye className="bg-transparent" fontSize={"20px"} />
-        </button>
-      )}
-
-      {!view && (
-        <button
-          className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute right-10 top-28 z-50 tooltip tooltip-top"
-          data-tip="Switch View"
-          onClick={() => {
-            setView(!view);
-          }}
-        >
-          <AiFillEyeInvisible className="bg-transparent" fontSize={"20px"} />
-        </button>
-      )}
-
       {/* for displaying the bubbles and cards */}
       {view ? (
-        <div className="h-[85vh] ml-[15%] pt-10 relative">
+        <div className="h-[90vh] sm:h-[85vh] sm:ml-[15%] pt-4 sm:pt-10 relative overflow-hidden">
+          <button
+            className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute sm:right-10 sm:top-28 right-4 z-20 tooltip tooltip-top"
+            data-tip="Switch View"
+            onClick={() => {
+              setView(!view);
+            }}
+          >
+            <AiFillEye className="bg-transparent" fontSize={"20px"} />
+          </button>
+
           <Bubble name="FaHtml5" time="3100" />
           <Bubble name="FaCss3Alt" time="3300" />
           <Bubble name="SiTailwindcss" time="3500" />
@@ -49,8 +34,20 @@ const Skills = () => {
           <Bubble name="SiGit" time="4900" />
         </div>
       ) : (
-        <div className="h-[85vh] flex items-center justify-center">
-          <div className="grid grid-cols-5 gap-10 w-fit">{<SkillCard />}</div>
+        <div className="sm:h-[85vh] flex items-center justify-center overflow-hidden">
+          <button
+            className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute sm:right-10 sm:top-28 top-28 right-4 z-20 tooltip tooltip-top"
+            data-tip="Switch View"
+            onClick={() => {
+              setView(!view);
+            }}
+          >
+            <AiFillEyeInvisible className="bg-transparent" fontSize={"20px"} />
+          </button>
+
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-10 w-fit pb-24 pt-10">
+            {<SkillCard />}
+          </div>
         </div>
       )}
     </Layout>
