@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../Layout/Layout";
+import Resume from "../Assets/Resume.pdf";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -9,7 +11,9 @@ const HomePage = () => {
         <div className="h-full flex flex-col justify-center">
           {/* introduction */}
           <p className="text-[#64ffda] font-mono text-lg">Hello! I am</p>
-          <h1 className="text-4xl sm:text-6xl font-bold py-4">Vinay Pratap Singh</h1>
+          <h1 className="text-4xl sm:text-6xl font-bold py-4">
+            Vinay Pratap Singh
+          </h1>
           <p className="text-[#64ffda] text-2xl sm:text-3xl font-bold">
             Full Stack Developer
           </p>
@@ -23,11 +27,19 @@ const HomePage = () => {
           {/* creating the button */}
           <div className="mt-6 space-x-4 sm:space-x-10">
             <button className="border-2 border-[#1aba95] bg-[#1aba95] px-4 py-2 sm:px-5 sm:py-3 rounded-md font-semibold">
-              Get Resume
+              <a
+                className="bg-transparent"
+                href={Resume}
+                download={"Vinay's Resume"}
+              >
+                Get Resume
+              </a>
             </button>
-            <button className="border-2 border-[#1aba95] px-4 py-2 sm:px-5 sm:py-3 rounded-md font-semibold">
-              Contact Me
-            </button>
+            <Link to={"/contact"}>
+              <button className="border-2 border-[#1aba95] px-4 py-2 sm:px-5 sm:py-3 rounded-md font-semibold">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

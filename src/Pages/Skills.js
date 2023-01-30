@@ -34,9 +34,9 @@ const Skills = () => {
           <Bubble name="SiGit" time="4900" />
         </div>
       ) : (
-        <div className="sm:h-[85vh] flex items-center justify-center overflow-hidden">
+        <div className="sm:h-[85vh] flex items-center justify-center overflow-hidden relative">
           <button
-            className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute sm:right-10 sm:top-28 top-28 right-4 z-20 tooltip tooltip-top"
+            className="border-2 border-[#1aba95] bg-[#1aba95] hover:bg-[#41e2bd] transition-all ease-in-out duration-300 p-2 rounded-full font-semibold text-white absolute sm:right-10 top-0 right-4 z-20 tooltip tooltip-top"
             data-tip="Switch View"
             onClick={() => {
               setView(!view);
