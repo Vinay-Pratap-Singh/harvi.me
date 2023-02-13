@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
-  const toggle = (event) => {
-    const element = event.target.nextElementSibling;
+  // creating the reference of menu
+  const menu = useRef();
+  const toggle = () => {
+    // getting the menu element
+    const element = menu.current;
     if (element.style.display === "none") {
       element.style.display = "block";
     } else {
@@ -38,7 +41,10 @@ const Navbar = () => {
       <FiMenu onClick={toggle} size={32} className="sm:hidden relative" />
 
       {/* creating the navigation menu */}
-      <ul className="hidden absolute sm:static z-50 left-0 w-full sm:w-auto top-[4.5rem] pb-2 sm:pb-0 pl-6 sm:pl-0 transition-all ease-in-out duration-500 sm:flex sm:space-x-8">
+      <ul
+        ref={menu}
+        className="hidden absolute sm:static z-50 left-0 w-full sm:w-auto top-[4.5rem] pb-2 sm:pb-0 pl-6 sm:pl-0 transition-all ease-in-out duration-500 sm:flex sm:space-x-8"
+      >
         <li>
           <NavLink
             to="/"
