@@ -27,11 +27,7 @@ const HomePage = () => {
           {/* creating the button */}
           <div className="mt-6 space-x-4 sm:space-x-10">
             <button className="border-2 border-[#1aba95] bg-[#1aba95] px-4 py-2 sm:px-5 sm:py-3 rounded-md font-semibold">
-              <a
-                className="bg-transparent"
-                href={Resume}
-                download={"Vinay's Resume"}
-              >
+              <a className="bg-transparent" href={Resume} target={"_blank"}>
                 Get Resume
               </a>
             </button>
