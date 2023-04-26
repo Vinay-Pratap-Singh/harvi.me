@@ -11,7 +11,7 @@
     inset 1px 1px 5px gray, inset -1px -1px 30px black;
   border-radius: 50%;
   padding: 15px;
-  color: white;
+  color: rgba(255, 255, 255, 0.822);
   transition: all 0.5s ease-in-out;
 }
 

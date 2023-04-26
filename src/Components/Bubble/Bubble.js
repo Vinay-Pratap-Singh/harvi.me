@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import "./Bubble.css";
-import { FaHtml5, FaCss3Alt, FaReact, FaNode } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiChakraui, SiGit, SiTypescript } from "react-icons/si";
 import {
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiChakraui,
-  SiGit,
-} from "react-icons/si";
-import { TbBrandJavascript } from "react-icons/tb";
+  TbBrandFirebase,
+  TbBrandJavascript,
+  TbBrandNextjs,
+} from "react-icons/tb";
 
 const Bubble = (props) => {
   useEffect(() => {
@@ -64,17 +62,19 @@ const Bubble = (props) => {
         <FaReact id={props.name} className="bubble" />
       )}
 
-      {/* for node */}
-      {props.name === "FaNode" && <FaNode id={props.name} className="bubble" />}
-
-      {/* for express */}
-      {props.name === "SiExpress" && (
-        <SiExpress id={props.name} className="bubble" />
+      {/* for next */}
+      {props.name === "TbBrandNextjs" && (
+        <TbBrandNextjs id={props.name} className="bubble" />
       )}
 
-      {/* for mongodb */}
-      {props.name === "SiMongodb" && (
-        <SiMongodb id={props.name} className="bubble" />
+      {/* for typescript */}
+      {props.name === "SiTypescript" && (
+        <SiTypescript id={props.name} className="bubble" />
+      )}
+
+      {/* for firebase */}
+      {props.name === "TbBrandFirebase" && (
+        <TbBrandFirebase id={props.name} className="bubble" />
       )}
 
       {/* for git */}

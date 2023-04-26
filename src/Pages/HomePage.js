@@ -15,11 +15,11 @@ const HomePage = () => {
             Vinay Pratap Singh
           </h1>
           <p className="text-[#64ffda] text-2xl sm:text-3xl font-bold">
-            Full Stack Developer
+            Frontend Developer
           </p>
 
           <ul className="mt-2 ml-4 flex flex-col sm:flex-row sm:items-center sm:space-x-10 list-disc">
-            <li>Web Developer</li>
+            <li>Frontend Developer</li>
             <li>Programmer</li>
             <li>Software Engineer</li>
           </ul>
@@ -27,7 +27,12 @@ const HomePage = () => {
           {/* creating the button */}
           <div className="mt-6 space-x-4 sm:space-x-10">
             <button className="border-2 border-[#1aba95] bg-[#1aba95] px-4 py-2 sm:px-5 sm:py-3 rounded-md font-semibold">
-              <a className="bg-transparent" href={Resume} target={"_blank"}>
+              <a
+                className="bg-transparent"
+                href={Resume}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Get Resume
               </a>
             </button>

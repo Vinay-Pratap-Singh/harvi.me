@@ -9,28 +9,23 @@ const About = () => {
       <div className="sm:mx-[15%] sm:h-[85vh] flex flex-col-reverse sm:flex-row items-center justify-center sm:space-x-10 text-gray-100">
         {/* for introduction */}
         <div className="sm:w-2/3 mx-6 sm:mx-0">
-          Hello! I am Vinay Pratap Singh, a passionate software engineer.
-          Currently working and exploring more on{" "}
-          <span className="text-[#64ffda]">Full Stack Web Development</span> in
-          which I am more focused toward the{" "}
-          <span className="text-[#64ffda]">Frontend Part</span>. <br />
-          My core skills are mostly based on{" "}
-          <span className="text-[#64ffda]">JavaScript</span>, which is the love
-          of my programming life. <br />
-          I am also looking forward to collaborate with like minded people on
-          projects to build some real-world problem solving tools. Also trying
-          to contribute more in open source to serve the community by my
-          knowledge and experience. <br /> <br />I am also open to work for any{" "}
-          <span className="text-[#64ffda]">Freelancing Project</span> based on
-          my skill set{" "}
-          <span role="img" aria-label="smile">
-            😊
-          </span>
-          .{/* adding the buttons */}
+          Hello! My name is{" "}
+          <span className="text-[#64ffda]">Vinay Pratap Singh</span>, and I am a
+          frontend developer with a passion for creating engaging and innovative
+          user experiences. I specialize in frontend technologies such as{" "}
+          <span className="text-[#64ffda]">React, Next.js, and TypeScript</span>
+          , and I am constantly exploring new ways to improve my skills and stay
+          up-to-date with the latest industry trends. <br /> Over the course of
+          my career, I have worked on a wide range of projects, from small-scale
+          applications to large, complex systems. Regardless of the size or
+          scope of the project, my goal is always the same: to create
+          high-quality, well-designed solutions that meet the needs of both
+          clients and end-users.
+          {/* adding the buttons */}
           <div className="mt-6 space-x-6 mb-[5rem] sm:mb-0">
             <NavLink to="/contact">
               <button className="border-2 border-[#1aba95] bg-[#1aba95] px-5 py-2 rounded-md font-semibold">
-                Hire Me
+                Connect with me
               </button>
             </NavLink>
             <NavLink to="/skills">

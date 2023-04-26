@@ -4,8 +4,8 @@ import Layout from "../Layout/Layout";
 import contactManager from "../Assets/contactManager.png";
 import bubbleGame from "../Assets/bubbleGame.png";
 import snakeGame from "../Assets/snakeGame.png";
-import whatsappClone from "../Assets/whatsappClone.png";
 import notesApp from "../Assets/notesApp.png";
+import quizmania from "../Assets/quizmania.png";
 import { SiGithub } from "react-icons/si";
 import { HiStatusOnline } from "react-icons/hi";
 
@@ -24,11 +24,15 @@ const Projects = () => {
       number: 16,
     },
     {
-      name: "ReactJS",
+      name: "ReactJS + TypeScript",
       number: 5,
     },
     {
-      name: "MERN",
+      name: "NextJS + TypeScript",
+      number: 5,
+    },
+    {
+      name: "Full Stack",
       number: 2,
     },
   ];
@@ -45,6 +49,7 @@ const Projects = () => {
             className="link text-[#64ffda]"
             href="https://github.com/Vinay-Pratap-Singh"
             target={"_blank"}
+            rel="noreferrer"
           >
             Github Profile
           </a>
@@ -71,7 +76,7 @@ const Projects = () => {
             {/* for project 1 */}
             <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
               <img
-                src={contactManager}
+                src={quizmania}
                 className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
                 alt="image"
               />
@@ -80,6 +85,96 @@ const Projects = () => {
               <div className="flex flex-col gap-2">
                 <h1 className="text-center text-2xl font-semibold mb-4 font-mono">
                   <span className="mr-4 text-xl text-[#64ffda]">01.</span>
+                  Quizmania
+                </h1>
+                <p className="flex items-center gap-2">
+                  <h4 className="font-medium">Project Category :</h4>
+                  <p className="text-gray-200">React JS</p>
+                </p>
+
+                <div>
+                  <h4 className="font-medium">Technology Used</h4>
+                  <ul className="sm:flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200">
+                    <li>Tailwind CSS</li>
+                    <li>React JS</li>
+                    <li>TypeScript</li>
+                    <li>Firebase</li>
+                    <li>Redux Toolkit</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-medium">Description</h4>
+                  <p className="text-gray-200">
+                    It is a quiz application where a user can attend any number
+                    of quizes to improve his existing skills with industry
+                    standard questions.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-medium">Key Features</h4>
+                  <ul className="text-gray-200 list-disc pl-4">
+                    <li>Simple and easy to use user interface</li>
+                    <li>Test account for testing the app (user side only)</li>
+                    <li>Authentication system for signup and login</li>
+                    <li>User can attend any number of quizes</li>
+                    <li>
+                      User can check his attempts and other details in profile
+                    </li>
+                    <li>Admin can CRUD over Questions and Categories</li>
+                    <li>
+                      Admin can see list of all the users and their attempt
+                      details
+                    </li>
+                    <li>
+                      Admin dashboard for complete analysis of data over there
+                    </li>
+                  </ul>
+                </div>
+
+                {/* for buttons */}
+                <div className="flex items-center gap-4">
+                  <button
+                    className="hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent"
+                    data-tip="Repo Link"
+                  >
+                    <a
+                      href="https://github.com/Vinay-Pratap-Singh/QuizMania"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      <SiGithub size={24} />
+                    </a>
+                  </button>
+                  <button
+                    className="hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent"
+                    data-tip="Live Link"
+                  >
+                    <a
+                      href="https://quizmania-harvi.netlify.app/"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      <HiStatusOnline size={24} />
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* for project 2 */}
+            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
+              <img
+                src={contactManager}
+                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
+                alt="image"
+              />
+
+              {/* right section for project details */}
+              <div className="flex flex-col gap-2">
+                <h1 className="text-center text-2xl font-semibold mb-4 font-mono">
+                  <span className="mr-4 text-xl text-[#64ffda]">02.</span>
                   Contact Manager
                 </h1>
                 <p className="flex items-center gap-2">
@@ -90,8 +185,6 @@ const Projects = () => {
                 <div>
                   <h4 className="font-medium">Technology Used</h4>
                   <ul className="sm:flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200">
-                    <li>HTML</li>
-                    <li>CSS</li>
                     <li>Chakra UI</li>
                     <li>ReactJS</li>
                     <li>NodeJS</li>
@@ -140,6 +233,7 @@ const Projects = () => {
                     <a
                       href="https://github.com/Vinay-Pratap-Singh/Contact-App-Client"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <SiGithub size={24} />
                     </a>
@@ -151,6 +245,7 @@ const Projects = () => {
                     <a
                       href="https://contact-app-harvi.netlify.app/"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <HiStatusOnline size={24} />
                     </a>
@@ -159,8 +254,8 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* for project 2 */}
-            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
+            {/* for project 3 */}
+            <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
               <img
                 src={snakeGame}
                 className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
@@ -170,7 +265,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className="flex flex-col gap-2">
                 <h1 className="text-center text-2xl font-semibold mb-4 font-mono">
-                  <span className="mr-4 text-xl text-[#64ffda]">02.</span>
+                  <span className="mr-4 text-xl text-[#64ffda]">03.</span>
                   Snake Game
                 </h1>
                 <p className="flex items-center gap-2">
@@ -217,6 +312,7 @@ const Projects = () => {
                     <a
                       href="https://github.com/Vinay-Pratap-Singh/Snake-using-Canvas"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <SiGithub size={24} />
                     </a>
@@ -225,7 +321,11 @@ const Projects = () => {
                     className="hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent"
                     data-tip="Live Link"
                   >
-                    <a href="https://harvisnake.netlify.app/" target={"_blank"}>
+                    <a
+                      href="https://harvisnake.netlify.app/"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
                       <HiStatusOnline size={24} />
                     </a>
                   </button>
@@ -233,8 +333,8 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* for project 3 */}
-            <div className="flex flex-col sm:flex-row items-center gap-10 text-white">
+            {/* for project 4 */}
+            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
               <img
                 src={bubbleGame}
                 className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
@@ -244,7 +344,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className="flex flex-col gap-2">
                 <h1 className="text-center text-2xl font-semibold mb-4 font-mono">
-                  <span className="mr-4 text-xl text-[#64ffda]">03.</span>
+                  <span className="mr-4 text-xl text-[#64ffda]">04.</span>
                   Bubble Game
                 </h1>
                 <p className="flex items-center gap-2">
@@ -292,6 +392,7 @@ const Projects = () => {
                     <a
                       href="https://github.com/Vinay-Pratap-Singh/Bubble-Game"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <SiGithub size={24} />
                     </a>
@@ -303,70 +404,7 @@ const Projects = () => {
                     <a
                       href="https://harvi-bubble-game.netlify.app/"
                       target={"_blank"}
-                    >
-                      <HiStatusOnline size={24} />
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* for project 4 */}
-            <div className="flex flex-col sm:flex-row-reverse items-center gap-10 text-white">
-              <img
-                src={whatsappClone}
-                className="sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md"
-                alt="image"
-              />
-
-              {/* right section for project details */}
-              <div className="flex flex-col gap-2">
-                <h1 className="text-center text-2xl font-semibold mb-4 font-mono">
-                  <span className="mr-4 text-xl text-[#64ffda]">04.</span>
-                  Whatsapp web UI clone
-                </h1>
-                <p className="flex items-center gap-2">
-                  <h4 className="font-medium">Project Category :</h4>
-                  <p className="text-gray-200">ReactJS</p>
-                </p>
-
-                <div>
-                  <h4 className="font-medium">Technology Used</h4>
-                  <ul className="flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200">
-                    <li>ReactJS</li>
-                    <li>Chakra UI</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-medium">Description</h4>
-                  <p className="text-gray-200">
-                    It is a user interface clone of the whatsapp web. I had
-                    added some dummy information in it using the JSON file for
-                    having a better visualisation of the project.
-                  </p>
-                </div>
-
-                {/* for buttons */}
-                <div className="flex items-center gap-4">
-                  <button
-                    className="hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent"
-                    data-tip="Repo Link"
-                  >
-                    <a
-                      href="https://github.com/Vinay-Pratap-Singh/Whatsapp-UI-Clone"
-                      target={"_blank"}
-                    >
-                      <SiGithub size={24} />
-                    </a>
-                  </button>
-                  <button
-                    className="hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent"
-                    data-tip="Live Link"
-                  >
-                    <a
-                      href="https://whatsappuiclone-harvi.netlify.app/"
-                      target={"_blank"}
+                      rel="noreferrer"
                     >
                       <HiStatusOnline size={24} />
                     </a>
@@ -430,6 +468,7 @@ const Projects = () => {
                     <a
                       href="https://github.com/Vinay-Pratap-Singh/Notes-Keeping-App"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <SiGithub size={24} />
                     </a>
@@ -441,6 +480,7 @@ const Projects = () => {
                     <a
                       href="https://notes-harvi.netlify.app/"
                       target={"_blank"}
+                      rel="noreferrer"
                     >
                       <HiStatusOnline size={24} />
                     </a>
@@ -455,6 +495,7 @@ const Projects = () => {
                 className="bg-transparent"
                 href="https://github.com/Vinay-Pratap-Singh"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 Show More
               </a>
